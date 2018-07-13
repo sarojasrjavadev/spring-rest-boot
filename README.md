@@ -34,6 +34,6 @@ NOTE :
 1. Java 8, Maven, Spring Tool Suite, Apache Tomcat would be the pre-requisites
 to run this application
 2. Port number is configured in application.yml file and can be modified as
-  needed
+  needed 
   
 ----------------------------------------------------------------------------------
