@@ -30,10 +30,13 @@ tha Maven Spring Boot Plugin run goal. (Command to be executed -
 mvn spring-boot:run)
 4. Once the application start up is clean, hit localhost:<portnumber>/us-headlines
 end point, to see the headlines fetched as a response in JSON format
+  
+----------------------------------------------------------------------------------
+
 NOTE : 
 1. Java 8, Maven, Spring Tool Suite, Apache Tomcat would be the pre-requisites
 to run this application
 2. Port number is configured in application.yml file and can be modified as
-  needed 
+  needed
   
 ----------------------------------------------------------------------------------
