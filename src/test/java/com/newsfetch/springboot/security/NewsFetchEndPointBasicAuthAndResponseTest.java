@@ -51,7 +51,7 @@ public class NewsFetchEndPointBasicAuthAndResponseTest {
     
     @Test
     public void testResponseContent() throws Exception {
-    	
+    	// Positive Case
     	 MvcResult result = this.mockMvc.perform(get(NewsFetchEndPointBasicAuthAndResponseTest.TEST_URL).with(httpBasic("user", "password")))
                  .andExpect(authenticated())
                  .andExpect(status().is2xxSuccessful())
@@ -60,6 +60,12 @@ public class NewsFetchEndPointBasicAuthAndResponseTest {
          assertTrue(result.getResponse().getContentAsString().contains("source"));
          assertTrue(result.getResponse().getContentAsString().contains("author"));
          assertTrue(result.getResponse().getContentAsString().contains("title"));
+    	
+     	// Negative Case
+    	 result = this.mockMvc.perform(get("/random").with(httpBasic("user", "password")))
+                 .andExpect(authenticated())
+                 .andExpect(status().is4xxClientError())
+                 .andReturn();
     	
     }
     
