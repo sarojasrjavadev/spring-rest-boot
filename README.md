@@ -8,7 +8,7 @@ Contents
 
 ----------------------------------------------------------------------------------
 
-Purpose
+Purpose :
 This application can fetch US news headlines from a third party data provider,
 with a REST GET endpoint
 
